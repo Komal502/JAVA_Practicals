@@ -31,7 +31,7 @@ class Practical5{
 		if(number<=1){
 		   return 1;
 		}
-		return number*factorial(number-1);
+		return number*factorial3(number-1);
         }
 //sum of array using for loop	
     	int getSum1(int[] numbers)
