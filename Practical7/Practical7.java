@@ -216,14 +216,14 @@ class Practical7
 	{
 	Practical7 obj=new Practical7();
 		int size=Integer.parseInt(args[0])+2;
-		for(int ln=1;ln<=size+2;ln++)
+		for(int ln=1;ln<=size;ln++)
 		{
-			System.out.println(obj.getStringK1(ln,size+2)+"   "+obj.getString_o1(ln,size+2)+"   "+obj.getString_m1(ln,size+2)+"   "+obj.getString_A1(ln,size+2)+"   "+obj.getString_L1(ln,size+2));
+			System.out.println(obj.getStringK1(ln,size)+"   "+obj.getString_o1(ln,size)+"   "+obj.getString_m1(ln,size)+"   "+obj.getString_A1(ln,size)+"   "+obj.getString_L1(ln,size));
 
 		}
-		for(int ln=(size+2)-1;ln>0;ln--)
+		for(int ln=(size)-1;ln>0;ln--)
 		{
-			System.out.println(obj.getStringK2(ln,size+2)+"   "+obj.getString_o2(ln,size+2)+"   "+obj.getString_m2(ln,size+2)+"   "+obj.getString_A2(ln,size+2)+"   "+obj.getString_L2(ln,size+2));
+			System.out.println(obj.getStringK2(ln,size)+"   "+obj.getString_o2(ln,size)+"   "+obj.getString_m2(ln,size)+"   "+obj.getString_A2(ln,size)+"   "+obj.getString_L2(ln,size));
 				
 		}
 		
