@@ -4,7 +4,7 @@ class Practical9 {
     public static int[] randomNumbers(int number) {
         int[] arr = new int[number];
         for (int i = 0; i < number; i++) {
-            arr[i] = (System.nannotime()%30)+ 1; // Generate numbers between 1 and 10
+            arr[i] =(int)(System.nanoTime()%30)+ 1; // Generate numbers between 1 and 10
         }
         return arr;
     }
@@ -63,7 +63,7 @@ class Practical9 {
         StringBuilder sb = new StringBuilder(size);
 
         for (int i = 0; i < size; i++) {
-            int randomValue = (char)(System.nannotime()%30)+1;
+            int randomValue = (char)(System.nanoTime()%52)+1;
             if (randomValue < 26) {
                 sb.append((char) (randomValue + 65)); // A-Z
             } else {
@@ -109,8 +109,9 @@ class Practical9 {
     }
 
     public static void main(String args[]) {
-        int arr[] = randomNumbers(5);
+    int size=Integer.parseInt(args[0]);
+        int arr[] = randomNumbers(size);
         TimeCount(arr);
-        stringConcatenationTime(5000); // Increased size for better comparison
+        stringConcatenationTime(size); // Increased size for better comparison
     }
 }
