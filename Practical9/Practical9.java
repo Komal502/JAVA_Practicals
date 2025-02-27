@@ -4,7 +4,7 @@ class Practical9 {
     public static int[] randomNumbers(int number) {
         int[] arr = new int[number];
         for (int i = 0; i < number; i++) {
-            arr[i] =(int)(System.nanoTime()%30)+ 1; // Generate numbers between 1 and 10
+            arr[i] =(int)(System.nanoTime()%30)+ 1; // Generate numbers between 1 and 31
         }
         return arr;
     }
