@@ -1,13 +1,10 @@
-import java.util.Random;
-
 class Practical9 {
 
     // Generates an array of random numbers
     public static int[] randomNumbers(int number) {
         int[] arr = new int[number];
-        Random rand = new Random();
         for (int i = 0; i < number; i++) {
-            arr[i] = rand.nextInt(10) + 1; // Generate numbers between 1 and 10
+            arr[i] = (System.nannotime()%30)+ 1; // Generate numbers between 1 and 10
         }
         return arr;
     }
@@ -64,10 +61,9 @@ class Practical9 {
     // Creates a random string of given size
     public static String createRandomString(int size) {
         StringBuilder sb = new StringBuilder(size);
-        Random rand = new Random();
 
         for (int i = 0; i < size; i++) {
-            int randomValue = rand.nextInt(52);
+            int randomValue = (char)(System.nannotime()%30)+1;
             if (randomValue < 26) {
                 sb.append((char) (randomValue + 65)); // A-Z
             } else {
