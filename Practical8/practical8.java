@@ -42,7 +42,6 @@ class Practical8{
 	}
 	void print_pattern2(int star,int size)
 	{
-	
 		if(star>0)
 		{
 			if(star==size+1)
