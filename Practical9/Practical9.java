@@ -48,8 +48,8 @@ class Practical9 {
             }
         }
 
-        long iterationAverage = totalIterationTime / (arr.length * 5);
-        long recursiveAverage = totalRecursiveTime / (arr.length * 5);
+        long iterationAverage = totalIterationTime / 5;
+        long recursiveAverage = totalRecursiveTime / 5;
 
         if (iterationAverage <= recursiveAverage) {
             System.out.println("Factorial using Iterative method is Faster.");
